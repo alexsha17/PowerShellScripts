@@ -1,3 +1,6 @@
+Skript 1 / einfach
+
+
 $now = Get-Date
 
 Write-Host "Datum: $now"
