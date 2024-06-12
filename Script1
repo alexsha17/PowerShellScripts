@@ -1,1 +1,11 @@
-Hello World
+$now = Get-Date
+
+Write-Host "Datum: $now"
+$computerName = Get-ComputerName
+Write-Host "Computer Name: $computerName
+$prozesse = Get-Process
+Write-Host "Anzahl der Prozesse die greade laufen: $($prozesse.Count)"
+$dateien = Get-ChildItem
+Write-Host "Anzahl der Dateien im Verzechnis (das gleiche wie ls | wc -l ): $($dateien.Count)"
+
+
