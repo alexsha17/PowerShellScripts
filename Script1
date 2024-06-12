@@ -1,11 +1,11 @@
-Skript 1 / einfach
+Skript 1 / sehr einfach
 
 
-$now = Get-Date
-Write-Host "Datum: $now"
+$Datum = Get-Date
+Write-Host "Datum: $Datum"
 $computerName = Get-ComputerInfo
 Write-Host "Computername: $computerName"
-$processes = Get-Process
-Write-Host "Anzahl der Prozesse: $($processes.Count)"
-$files = Get-ChildItem
-Write-Host "Anzahl der Dateien im Verzeichnis: $($files.Count)"
+$Prozesse = Get-Process
+Write-Host "Anzahl der Prozesse: $($Prozesse.Count)"
+$dateien = Get-ChildItem
+Write-Host "Anzahl der Dateien im Verzeichnis: $($dateien.Count)"
