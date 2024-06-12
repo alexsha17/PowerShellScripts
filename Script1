@@ -1,4 +1,5 @@
 Skript 1 / sehr einfach
+Informationsbeschaffung
 
 
 $Datum = Get-Date
