@@ -1,7 +1,7 @@
 $now = Get-Date
 
 Write-Host "Datum: $now"
-$computerName = Get-ComputerName
+$computerName = Get-Host
 Write-Host "Computer Name: $computerName
 $prozesse = Get-Process
 Write-Host "Anzahl der Prozesse die greade laufen: $($prozesse.Count)"
