@@ -1,1 +1,30 @@
-Hello World
+while($true) {
+
+    Write-Host "bitte starten sie das programm als administrator!"
+    Write-Host "
+    1.Rechte
+    2.Prozesse
+    3.Ip Konfiguration
+    4.Menü verlassen" 
+
+    $eingabe =read-host -Prompt "Bitte eine Zahl eingeben"
+
+    if($eingabe -eq 1){
+    Set-ExecutionPolicy RemoteSigned
+
+    }
+    elseif($eingabe -eq 2) {
+        Get-Process
+    }
+    elseif($eingabe -eq 3) {
+        Get-NetIPConfiguration
+    }
+    elseif($eingabe -eq 4) {
+        break
+    }
+    else {
+    Write-Host 'Die Eingabe ist keine Zahl zwischen 1-4' -foregroundcolor red
+    }
+
+
+}
