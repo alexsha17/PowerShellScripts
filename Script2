@@ -1,1 +1,4 @@
-Hello World
+$directoryPath = "C:\Testdaten"
+$outputFilePath = "C:\Testdaten2"
+Get-ChildItem -Path $directoryPath -File | Select-Object Name | Out-File -FilePath $outputFilePath
+Write-Host "Dateiliste wurde erfolgreich in '$outputFilePath' gespeichert."
